@@ -6,24 +6,24 @@
   vars_files:
     - vars/default.yml
 
-- tasks:
-  - name: Create document root1
-    file:
+  tasks:
+   - name: Create document root1
+     file:
        path: "/var/www/{{ http_host1 }}"
        state: directory
        owner: "{{ app_user }}"
        mode: '0755'
 
-  - name: Create document root 2
-    file:
+   - name: Create document root 2
+     file:
        path: "/var/www/{{ http_host2 }}"
        state: directory
        owner: "{{ app_user }}"
        mode: '0755'
         
         
-  - name: Create document root 3
-    file:
+   - name: Create document root 3
+     file:
        path: "/var/www/{{ http_host3 }}"
        state: directory
        owner: "{{ app_user }}"
