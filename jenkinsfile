@@ -4,6 +4,6 @@ node {
    git 'https://github.com/Shyamjith06/create_apacheServer_instances_coe.git'
   }
   stage('Create appacheServer Instances'){
-  sh label: 'ansible', script: 'ansible-playbook playbook.yml'
+  sh label: 'ansible', script: 'ansible-playbook playbook.yml -i inventory -u Shyam'
 }
 }
