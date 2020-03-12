@@ -1,5 +1,5 @@
 ---
-app_user: "Shyam"
+app_user: "ubuntu"
 http_host1: "feature_1"
 http_host2: "feature_2"
 http_host3: "feature_3"
